@@ -1,0 +1,16 @@
+Package: rElki
+Type: Package
+Title: An R interface to Java package ELKI (Version 0.7.5)
+Version: 0.1.0
+Authors@R: person("Lena", "Witterauf", email = "lena.emma77@gmail.com",
+  role = c("aut", "cre"))
+Description: An R interface to Java package ELKI (Version TODO). 
+    ELKI offers a comprehensive collection of clustering and outlier detection algorithms for data mining tasks written in Java. 
+    Package 'rElki' contains the interface code as well as the ELKI jar. 
+    For more information on ELKI see <https://elki-project.github.io/>.
+Depends: R (>= 3.0.1)
+License: AGPLv3
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    rJava (>= 0.9-10)
