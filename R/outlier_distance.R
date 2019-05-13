@@ -22,7 +22,7 @@
 #' }
 #'
 #'
-#' @exportMethod
+#' @export
 knn_outlier <- function(data_matrix, k) {
   database         <- create_and_initialize_database(data_matrix)
   
@@ -60,7 +60,7 @@ knn_outlier <- function(data_matrix, k) {
 #' }
 #'
 #'
-#' @exportMethod
+#' @export
 knn_weight_outlier <- function(data_matrix, k) {
   database         <- create_and_initialize_database(data_matrix)
   
@@ -98,7 +98,7 @@ knn_weight_outlier <- function(data_matrix, k) {
 #' }
 #'
 #'
-#' @exportMethod
+#' @export
 odin <- function(data_matrix, k) {
   database         <- create_and_initialize_database(data_matrix)
   
