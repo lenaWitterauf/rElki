@@ -2,7 +2,7 @@
 % Please edit documentation in R/outlier_lof.R
 \name{ldof}
 \alias{ldof}
-\title{LDOF Outlier score calculation.}
+\title{LDOF Outlier score calculation}
 \usage{
 ldof(data_matrix, k)
 }

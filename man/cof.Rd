@@ -2,7 +2,7 @@
 % Please edit documentation in R/outlier_lof.R
 \name{cof}
 \alias{cof}
-\title{COF Outlier score calculation.}
+\title{COF Outlier score calculation}
 \usage{
 cof(data_matrix, k)
 }

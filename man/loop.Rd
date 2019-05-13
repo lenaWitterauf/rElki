@@ -2,7 +2,7 @@
 % Please edit documentation in R/outlier_lof.R
 \name{loop}
 \alias{loop}
-\title{LoOP Outlier score calculation.}
+\title{LoOP Outlier score calculation}
 \usage{
 loop(data_matrix, k_reach, k_comp = k_reach, lambda = NA)
 }

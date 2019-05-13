@@ -1,4 +1,4 @@
-#' LOF Outlier score calculation.
+#' LOF Outlier score calculation
 #'
 #' \code{lof} returns the LOF Outlier score for every observation in the
 #' given data_matrix. LOF is short for Local Outlier Factor.
@@ -36,7 +36,7 @@ lof <- function(data_matrix, k) {
   read_outlier_result_scores(result, database)
 }
 
-#' Simplified LOF Outlier score calculation.
+#' Simplified LOF Outlier score calculation
 #'
 #' \code{simplified_lof} returns the Simplified LOF Outlier score for every observation in the
 #' given data_matrix. LOF is short for Local Outlier Factor.
@@ -74,7 +74,7 @@ simplified_lof <- function(data_matrix, k) {
   read_outlier_result_scores(result, database)
 }
 
-#' COF Outlier score calculation.
+#' COF Outlier score calculation
 #'
 #' \code{cof} returns the COF Outlier score for every observation in
 #' the given data_matrix. COF is short for Connectivity-based Outlier Factor.
@@ -112,7 +112,7 @@ cof <- function(data_matrix, k) {
   read_outlier_result_scores(result, database)
 }
 
-#' INFLO Outlier score calculation.
+#' INFLO Outlier score calculation
 #'
 #' \code{inflo} returns the INFLO Outlier score for every observation in the
 #' given data_matrix. INFLO is short for Influence Outlierness using Symetric
@@ -160,7 +160,7 @@ inflo <- function(data_matrix, k, m = NA) {
   read_outlier_result_scores(result, database)
 }
 
-#' LoOP Outlier score calculation.
+#' LoOP Outlier score calculation
 #'
 #' \code{loop} returns the LoOP Outlier score for every observation in the given
 #' data_matrix. LoOP is short for Local Outlier Probabilities. LOF in
@@ -212,7 +212,7 @@ loop <- function(data_matrix, k_reach, k_comp = k_reach, lambda = NA) {
   read_outlier_result_scores(result, database)
 }
 
-#' LDOF Outlier score calculation.
+#' LDOF Outlier score calculation
 #'
 #' \code{ldof} returns the LDOF Outlier score for every observation in the
 #' given data_matrix. LDOF is short for Local Distance-Based Outlier Factor.
@@ -250,7 +250,7 @@ ldof <- function(data_matrix, k) {
   read_outlier_result_scores(result, database)
 }
 
-#' LDF Outlier score calculation.
+#' LDF Outlier score calculation
 #'
 #' \code{ldf} returns the LDF Outlier score for every observation in the given
 #' data_matrix. Kernel density estimation in
@@ -299,7 +299,7 @@ ldf <- function(data_matrix, k, h = 1, c = 0.1) {
   read_outlier_result_scores(result, database)
 }
 
-#' KDEOS  Outlier score calculation.
+#' KDEOS  Outlier score calculation
 #'
 #' \code{kdeos} returns the KDEOF Outlier score for every observation in the given
 #' data_matrix. Kernel density estimation in

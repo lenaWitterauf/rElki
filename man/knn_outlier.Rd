@@ -2,7 +2,7 @@
 % Please edit documentation in R/outlier_distance.R
 \name{knn_outlier}
 \alias{knn_outlier}
-\title{KNN Outlier score calculation.}
+\title{KNN Outlier score calculation}
 \usage{
 knn_outlier(data_matrix, k)
 }

@@ -2,7 +2,7 @@
 % Please edit documentation in R/outlier_lof.R
 \name{lof}
 \alias{lof}
-\title{LOF Outlier score calculation.}
+\title{LOF Outlier score calculation}
 \usage{
 lof(data_matrix, k)
 }

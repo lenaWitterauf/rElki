@@ -2,7 +2,7 @@
 % Please edit documentation in R/outlier_distance.R
 \name{odin}
 \alias{odin}
-\title{ODIN Outlier score calculation.}
+\title{ODIN Outlier score calculation}
 \usage{
 odin(data_matrix, k)
 }

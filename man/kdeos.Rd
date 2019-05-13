@@ -2,7 +2,7 @@
 % Please edit documentation in R/outlier_lof.R
 \name{kdeos}
 \alias{kdeos}
-\title{KDEOS  Outlier score calculation.}
+\title{KDEOS  Outlier score calculation}
 \usage{
 kdeos(data_matrix, k_min, k_max = k_min, kernel_scale = NA,
   min_bandwidth = NA, idim = NA)

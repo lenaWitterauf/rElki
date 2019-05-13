@@ -1,4 +1,4 @@
-#' KNN Outlier score calculation.
+#' KNN Outlier score calculation
 #'
 #' \code{knn_outlier} returns the KNN Outlier score for every observation in the
 #' given data_matrix. The distance of an observation to its k-nearest
@@ -37,7 +37,7 @@ knn_outlier <- function(data_matrix, k) {
   read_outlier_result_scores(result, database)
 }
 
-#' KNN Weight Outlier score calculation.
+#' KNN Weight Outlier score calculation
 #'
 #' \code{knn_weight_outlier} returns the KNN Weight Outlier score for every observation in the
 #' given data_matrix. The accumulated distances of an observation to its k-nearest observations is used as outlier score.
@@ -75,7 +75,7 @@ knn_weight_outlier <- function(data_matrix, k) {
   read_outlier_result_scores(result, database)
 }
 
-#' ODIN Outlier score calculation.
+#' ODIN Outlier score calculation
 #'
 #' \code{odin} returns the ODIN Outlier score for every observation in the given
 #' data_matrix. The in-degree of the KNN graph of an observation is used as

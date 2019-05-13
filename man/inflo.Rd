@@ -2,7 +2,7 @@
 % Please edit documentation in R/outlier_lof.R
 \name{inflo}
 \alias{inflo}
-\title{INFLO Outlier score calculation.}
+\title{INFLO Outlier score calculation}
 \usage{
 inflo(data_matrix, k, m = NA)
 }
