@@ -1,11 +1,12 @@
 #' Fast-ABOD Outlier score calculation
 #'
-#' \code{fast_abod} returns the Fast-ABOD (approximateABOF) Outlier score for every observation in the
-#' given data_matrix. ABOD is short for Angle-Based Outlier Detection.
+#' \code{fast_abod} returns the Fast-ABOD (approximateABOF) Outlier score for
+#' every observation in the given data_matrix. ABOD is short for Angle-Based
+#' Outlier Detection.
 #'
 #' @seealso
-#'   \url{https://elki-project.github.io/releases/release0.7.5/javadoc/de/lmu/ifi/dbs/elki/algorithm/outlier/anglebased/FastABOD}
-#'   for ELKI documentation.
+#' \url{https://elki-project.github.io/releases/release0.7.5/javadoc/de/lmu/ifi/dbs/elki/algorithm/outlier/anglebased/FastABOD}
+#' for ELKI documentation.
 #'
 #' @param data_matrix numeric Matrix containing data the outlier score is
 #'   calculated for. Rows are treated as observations, columns as features.
