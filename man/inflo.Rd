@@ -12,7 +12,7 @@ calculated for. Rows are treated as observations, columns as features.}
 
 \item{k}{Number. Neighbourhood-size used to calculate outlier scores.}
 
-\item{m}{Floating point number. Is used as pruning threshold and has to be
+\item{m}{Number. Is used as pruning threshold and has to be
 greater than 0.0. If NA, ELKI's default is used (1.0).}
 }
 \value{

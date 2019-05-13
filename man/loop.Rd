@@ -4,7 +4,7 @@
 \alias{loop}
 \title{LoOP Outlier score calculation.}
 \usage{
-loop(data_matrix, k_reach, k_comp = NA, lambda = NA)
+loop(data_matrix, k_reach, k_comp = k_reach, lambda = NA)
 }
 \arguments{
 \item{data_matrix}{numeric Matrix containing data the outlier score is
@@ -12,10 +12,10 @@ calculated for. Rows are treated as observations, columns as features.}
 
 \item{k_reach}{Number. Neighbourhood-size used to calculate outlier scores.}
 
-\item{k_comp}{Number. Neighbourhood-size used to calculate outlier scores. If
-NA, k_reach is used.}
+\item{k_comp}{Number. Neighbourhood-size used to calculate outlier scores.
+Defaults to k_reach}
 
-\item{lambda}{Floating point number. If NA, ELKI's default is used (2.0).}
+\item{lambda}{Number. If NA, ELKI's default is used (2.0).}
 }
 \value{
 List of outlier scores. The score at position x belongs to the

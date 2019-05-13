@@ -2,8 +2,11 @@
 
 export(cof)
 export(inflo)
+export(kdeos)
 export(knn_outlier)
 export(knn_weight_outlier)
+export(ldf)
+export(ldof)
 export(lof)
 export(loop)
 export(odin)
