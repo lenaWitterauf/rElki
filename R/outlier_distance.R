@@ -77,12 +77,13 @@ knn_weight_outlier <- function(data_matrix, k) {
 
 #' ODIN Outlier score calculation.
 #'
-#' \code{odin} returns the ODIN Outlier score for every observation in the
-#' given data_matrix. The in-degree of the KNN graph of an observation is used as outlier score.
+#' \code{odin} returns the ODIN Outlier score for every observation in the given
+#' data_matrix. The in-degree of the KNN graph of an observation is used as
+#' outlier score.
 #'
 #' @seealso
-#'   \url{https://elki-project.github.io/releases/release0.7.5/javadoc/de/lmu/ifi/dbs/elki/algorithm/outlier/distance/ODIN.html}
-#'   for ELKI documentation.
+#' \url{https://elki-project.github.io/releases/release0.7.5/javadoc/de/lmu/ifi/dbs/elki/algorithm/outlier/distance/ODIN.html}
+#' for ELKI documentation.
 #'
 #' @param data_matrix numeric Matrix containing data the outlier score is
 #'   calculated for. Rows are treated as observations, columns as features.

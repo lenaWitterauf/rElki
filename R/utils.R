@@ -32,3 +32,8 @@ as_java_integer <- function(integer) {
   integer <- as.integer(integer)
   rJava::.jnew('java/lang/Integer', integer)
 }
+
+as_java_double <- function(double) {
+  double <- as.double(double)
+  rJava::.jnew('java/lang/Double', double)
+}

@@ -17,8 +17,9 @@ List of outlier scores. The score at position x belongs to the
   observation given in row x of the original data_matrix.
 }
 \description{
-\code{odin} returns the ODIN Outlier score for every observation in the
-given data_matrix. The in-degree of the KNN graph of an observation is used as outlier score.
+\code{odin} returns the ODIN Outlier score for every observation in the given
+data_matrix. The in-degree of the KNN graph of an observation is used as
+outlier score.
 }
 \examples{
 data_matrix <- matrix(c(1:30), nrow=10, ncol=3)
@@ -32,5 +33,5 @@ for(index in c(1:10)) {
 }
 \seealso{
 \url{https://elki-project.github.io/releases/release0.7.5/javadoc/de/lmu/ifi/dbs/elki/algorithm/outlier/distance/ODIN.html}
-  for ELKI documentation.
+for ELKI documentation.
 }
