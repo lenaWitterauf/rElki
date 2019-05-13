@@ -1,4 +1,6 @@
 convert_to_java_double_array <- function(data_matrix) {
+  stopifnot(is.matrix(data_matrix))
+  
   mode(data_matrix) <- 'double'
   java_array <- rJava::.jarray(data_matrix, dispatch=TRUE)
   rJava::.jcast(java_array, '[[D')
