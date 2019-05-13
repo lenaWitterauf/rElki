@@ -16,3 +16,5 @@ Imports:
     rJava (>= 0.9-10)
 SystemRequirements: Java (>= 8)
 RoxygenNote: 6.1.1
+Suggests: 
+    testthat

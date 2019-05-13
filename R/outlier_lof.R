@@ -64,7 +64,7 @@ simplified_lof <- function(data_matrix, k) {
   database         <- create_and_initialize_database(data_matrix)
   
   parameterization <- create_list_parameterization()  
-  k_option         <- read_option_id('de/lmu/ifi/dbs/elki/algorithm/outlier/lof/SimplifiedLOF$Parameterizer',
+  k_option         <- read_option_id('de/lmu/ifi/dbs/elki/algorithm/outlier/lof/LOF$Parameterizer',
                                      'K_ID')
   parameterization <- set_list_parameterization_option(parameterization, 
                                                        k_option, as_java_integer(k))
@@ -154,7 +154,7 @@ inflo <- function(data_matrix, k, m = NA) {
     parameterization <- set_list_parameterization_option(parameterization, 
                                                          m_option, as_java_double(m))
   }
-  algorithm        <- parameterize_or_abort('de/lmu/ifi/dbs/elki/algorithm/outlier/lof/COF', parameterization)
+  algorithm        <- parameterize_or_abort('de/lmu/ifi/dbs/elki/algorithm/outlier/lof/INFLO', parameterization)
   
   result           <- run_outlier_algorithm(algorithm, database)
   read_outlier_result_scores(result, database)
