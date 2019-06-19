@@ -44,7 +44,7 @@ read_result_scores <- function(database, result_scores) {
                                          'Lde/lmu/ifi/dbs/elki/database/ids/DBIDIter;',
                                          'iterDBIDs')
 
-  result <- list()
+  result <- c()
   while(rJava::.jcall(result_score_iterator, 'Z', 'valid')) {
     result_score_iterator_ref <- rJava::.jcast(result_score_iterator,
                                                'de/lmu/ifi/dbs/elki/database/ids/DBIDRef')
