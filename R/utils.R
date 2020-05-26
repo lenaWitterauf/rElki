@@ -37,3 +37,7 @@ as_java_double <- function(double) {
   double <- as.double(double)
   rJava::.jnew('java/lang/Double', double)
 }
+
+as_java_boolean <- function(boolean) {
+  rJava::.jnew('java/lang/Boolean', boolean)
+}

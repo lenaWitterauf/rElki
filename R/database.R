@@ -58,3 +58,42 @@ read_result_scores <- function(database, result_scores) {
   
   result
 }
+
+read_result_cluster <- function(database, cluster) {
+  number_vector_field <- rJava::.jfield('de/lmu/ifi/dbs/elki/data/type/TypeUtil', 
+                                        'Lde/lmu/ifi/dbs/elki/data/type/VectorFieldTypeInformation;',
+                                        'NUMBER_VECTOR_FIELD')
+  database_relation   <- rJava::.jcall(database,
+                                      'Lde/lmu/ifi/dbs/elki/database/relation/Relation;',
+                                      'getRelation',
+                                      rJava::.jcast(number_vector_field, 'de/lmu/ifi/dbs/elki/data/type/TypeInformation'),
+                                      rJava::.jarray(rJava::.jnew(class = 'java/lang/Object')))
+  
+  raw_data_db_ids     <- rJava::.jcall(database_relation,
+                                      'Lde/lmu/ifi/dbs/elki/database/ids/DBIDs;',
+                                      'getDBIDs')
+  raw_data_db_ids     <- rJava::.jcast(raw_data_db_ids, 
+                                      'de/lmu/ifi/dbs/elki/database/ids/DBIDRange')
+  
+  cluster_db_ids      <- rJava::.jcall(cluster,
+                                      'Lde/lmu/ifi/dbs/elki/database/ids/DBIDs;',
+                                      'getIDs')
+  
+  
+  cluster_id_iterator <- rJava::.jcall(cluster_db_ids,
+                                      'Lde/lmu/ifi/dbs/elki/database/ids/DBIDIter;',
+                                      'iter')
+  
+  result <- c()
+  while(rJava::.jcall(cluster_id_iterator, 'Z', 'valid')) {
+    result_score_iterator_ref <- rJava::.jcast(cluster_id_iterator,
+                                               'de/lmu/ifi/dbs/elki/database/ids/DBIDRef')
+    result_offset             <- rJava::.jcall(raw_data_db_ids, 'I', 'getOffset', result_score_iterator_ref)
+    result                    <- c(result, result_offset)
+    cluster_id_iterator       <- rJava::.jcall(cluster_id_iterator, 
+                                               'Lde/lmu/ifi/dbs/elki/database/ids/DBIDIter;',
+                                               'advance')
+  }
+  
+  result
+}

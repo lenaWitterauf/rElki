@@ -5,6 +5,7 @@
 .onLoad <- function(libname, pkgname = 'elki-bundle-0.7.5.jar') {
   # Load ELKI jar and initialize JVM
   rJava::.jpackage(pkgname, lib.loc = libname)
+  rJava::.jaddClassPath("inst/java/elki-bundle-0.7.5.jar")
 }
 
 
