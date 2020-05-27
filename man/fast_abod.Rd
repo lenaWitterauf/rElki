@@ -17,8 +17,9 @@ List of outlier scores. The score at position x belongs to the
   observation given in row x of the original data_matrix.
 }
 \description{
-\code{fast_abod} returns the Fast-ABOD (approximateABOF) Outlier score for every observation in the
-given data_matrix. ABOD is short for Angle-Based Outlier Detection.
+\code{fast_abod} returns the Fast-ABOD (approximateABOF) Outlier score for
+every observation in the given data_matrix. ABOD is short for Angle-Based
+Outlier Detection.
 }
 \examples{
 data_matrix <- matrix(c(1:30), nrow=10, ncol=3)
@@ -32,5 +33,5 @@ for(index in c(1:10)) {
 }
 \seealso{
 \url{https://elki-project.github.io/releases/release0.7.5/javadoc/de/lmu/ifi/dbs/elki/algorithm/outlier/anglebased/FastABOD}
-  for ELKI documentation.
+for ELKI documentation.
 }

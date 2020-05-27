@@ -4,8 +4,14 @@
 \alias{kdeos}
 \title{KDEOS  Outlier score calculation}
 \usage{
-kdeos(data_matrix, k_min, k_max = k_min, kernel_scale = NA,
-  min_bandwidth = NA, idim = NA)
+kdeos(
+  data_matrix,
+  k_min,
+  k_max = k_min,
+  kernel_scale = NA,
+  min_bandwidth = NA,
+  idim = NA
+)
 }
 \arguments{
 \item{data_matrix}{numeric Matrix containing data the outlier score is
