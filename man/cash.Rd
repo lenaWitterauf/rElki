@@ -10,11 +10,14 @@ cash(data_matrix, minpts, maxlevel, jitter, adjust = NA, mindim = NA)
 \item{data_matrix}{numeric Matrix containing data the clusters are
 calculated for. Rows are treated as observations, columns as features.}
 
-\item{minpts}{Number. Threshold for minimum number of points in a cluster.}
+\item{minpts}{Number. Threshold for minimum number of points in a cluster.
+Has to be >= 1.}
 
-\item{maxlevel}{Number. Maximum level for splitting the hypercube.}
+\item{maxlevel}{Number. Maximum level for splitting the hypercube.
+Has to be >= 1.}
 
-\item{jitter}{Number. Maximum jitter for distance values.}
+\item{jitter}{Number. Maximum jitter for distance values.
+Has to be > 0.}
 
 \item{adjust}{Boolean. Apply adjustment heuristic for interval choosing.}
 

@@ -9,8 +9,11 @@
 #' @param data_matrix numeric Matrix containing data the clusters are
 #'   calculated for. Rows are treated as observations, columns as features.
 #' @param minpts Number. Threshold for minimum number of points in a cluster.
+#'   Has to be >= 1.
 #' @param maxlevel Number. Maximum level for splitting the hypercube.
+#'   Has to be >= 1.
 #' @param jitter Number. Maximum jitter for distance values.
+#'   Has to be > 0.
 #' @param adjust Boolean. Apply adjustment heuristic for interval choosing.
 #' @param mindim Number. Minimum dimensionality of the subspaces to be found.
 #' @return List of clusters. The indices of each cluster belong to the indices
@@ -43,7 +46,7 @@ cash <- function(data_matrix, minpts, maxlevel, jitter, adjust = NA, mindim = NA
   jitter_option    <- read_option_id('de/lmu/ifi/dbs/elki/algorithm/clustering/correlation/CASH$Parameterizer',
                                      'JITTER_ID') 
   parameterization <- set_list_parameterization_option(parameterization, 
-                                                       jitter_option, as_java_integer(jitter))
+                                                       jitter_option, as_java_double(jitter))
   
   if(!is.na(mindim)) {
     mindim_option    <- read_option_id('de/lmu/ifi/dbs/elki/algorithm/clustering/correlation/CASH$Parameterizer',
